@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(../images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+body header {
+  position: fixed;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(5, 5, 61);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+body header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body header .header-container img {
+  width: 60px;
+  height: 60px;
+  border-radius: 43%;
+}
+body header .header-container .inputs {
+  width: 300px;
+}
+body header .header-container .inputs select:first-child {
+  width: 200px;
+}
+body header .header-container .inputs .teacher-select, body header .header-container .inputs .marry-select {
+  background-color: orange;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+body .teacher-cards {
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 500px) {
+  body .teacher-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  body .teacher-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1100px) {
+  body .teacher-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+body .teacher-cards .teacher-card {
+  border: 1px solid gray;
+  border-radius: 10px;
+  max-width: 350px;
+  width: 100%;
+}
+body .teacher-cards .teacher-card img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .teacher-cards .teacher-card .teacher-card-info {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+body .teacher-cards .teacher-card .teacher-card-info .first-name {
+  padding-bottom: 0px;
+  color: orange;
+  font-weight: 600;
+}
+body .teacher-cards .teacher-card .teacher-card-info .last-name {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: orange;
+}
+body .teacher-cards .teacher-card .teacher-card-info .studenst-link {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid rgb(255, 68, 0);
+  background-color: rgba(255, 68, 0, 0.322);
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body .teacher-cards .teacher-card .teacher-card-info .studenst-link:hover {
+  background-color: rgb(255, 68, 0);
+  color: #fff;
+}
+body .searching {
+  margin-top: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .searching input {
+  max-width: 400px;
+  width: 100%;
+}
+body .searching input::-webkit-input-placeholder {
+  color: rgba(255, 166, 0, 0.39);
+  font-weight: 600;
+}
+body .searching input::-moz-placeholder {
+  color: rgba(255, 166, 0, 0.39);
+  font-weight: 600;
+}
+body .searching input:-ms-input-placeholder {
+  color: rgba(255, 166, 0, 0.39);
+  font-weight: 600;
+}
+body .searching input::-ms-input-placeholder {
+  color: rgba(255, 166, 0, 0.39);
+  font-weight: 600;
+}
+body .searching input::placeholder {
+  color: rgba(255, 166, 0, 0.39);
+  font-weight: 600;
+}
+body .searching .search-input {
+  background-color: rgb(11, 11, 54);
+  color: orange;
+  font-weight: 600;
+  outline: none;
+  border: none;
+}
+body .searching .pagination {
+  margin-top: 15px;
+}
+body .searching .pagination .page-link {
+  background-color: rgb(11, 11, 54);
+}

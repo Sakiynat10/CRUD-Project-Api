@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./css/teacher.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" defer src="js/const.js"></script>
+    <script type="module" defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-container container">
+        <img src="./images/school-logo.png" alt="">
+        <div  class="d-flex gap-1 inputs">
+          <select class="form-select teacher-select" name="" id="">
+            <option  value="">Default</option>
+            <option  value="lastNmae-asc">FirstName (A-Z)</option>
+            <option value="lastNmae-desc">FirstName (Z-A)</option>
+          </select>
+          <select class="form-select marry-select" name="" id="">
+            <option  value="">All</option>
+            <option  value="true">Married</option>
+            <option value="false">Single</option>
+          </select>
+          <button data-bs-toggle="modal" data-bs-target="#teacher" class="btn btn-success">add</button>
+        </div>
+      </div>
+    </header>
+    <section id="hero">
+      <div class="container">
+        <div class="modal fade" id="teacher" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <form novalidate class="teacher-form">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="teacherLabel">Teacher data</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="firstName" placeholder="Firstname" required="">
+                    <div class="valid-feedback">Thanks for filling</div>
+                    <div class="invalid-feedback">Please fill</div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Lastname" name="lastName" required="">
+                    <div class="valid-feedback">Thanks for filling</div>
+                    <div class="invalid-feedback">Please fill</div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="url" class="form-control" name="avatar" placeholder="Picture link" required="">
+                    <div class="valid-feedback">Thanks for filling</div>
+                    <div class="invalid-feedback">Please fill</div>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label" for="isMarried">
+                      Is married ?
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="isMarried" name="isMarried">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">
+                  Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        </div>
+        <div class="searching">
+            <input type="text" placeholder="Searching teachers..." class="form-control search-input">
+            <ul class="pagination"></ul>
+        </div>
+        <div class="teacher-cards">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
