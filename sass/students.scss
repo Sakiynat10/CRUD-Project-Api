@@ -36,7 +36,7 @@ body{
                     max-width: 200px;
                     width: 100%;
                 }
-                .teacher-select , .marry-select{
+                .student-select , .marry-select{
                     background-color: orange;
                     color: #fff;
                     outline: none;
@@ -50,7 +50,7 @@ body{
         }
         
     }
-    .teacher-cards{
+    .student-cards{
         font-family: sans-serif;
         display: flex;
         flex-wrap: wrap;
@@ -68,7 +68,7 @@ body{
             display: grid;
             grid-template-columns: repeat(4 , 1fr);
         }
-        .teacher-card{
+        .student-card{
             border: 1px solid gray;
             border-radius: 10px;
             max-width: 350px;
@@ -79,8 +79,8 @@ body{
                 width: 100%;
                 position: relative;
                 height: 100px;
-                background-color: #7d2ae8;
-                .teacher-img{
+                background-color: orange;
+                .student-img{
                     z-index: 1;
                     width: 150px;
                     height: 150px;
@@ -88,7 +88,7 @@ body{
                     top: 20%;
                     left: 25%;
                     border-radius: 50%;
-                    border: 5px solid #7d2ae8;
+                    border: 5px solid orange;
                     // background-color: #fff;
                     padding: 5px;
                 }
@@ -97,24 +97,24 @@ body{
                     top: 10px;
                     right: 10px;
                 }
-                .edit-teacher-btn{
+                .edit-student-btn{
                     position: absolute;
-                    background-color: #7d2ae8;
+                    background-color: orange;
                     border: none;
                     top: 0px;
                     left: 40px;
                     border-top-right-radius: -50px;
                 }
-                .delete-teacher-btn{
+                .delete-student-btn{
                     position: absolute;
-                    background-color: #7d2ae8;
+                    background-color: orange;
                     border: none;
                     top: 0px;
                     left: 0px;
                 }
             }
             
-            .teacher-card-info{
+            .student-card-info{
                 border-end-end-radius: 10px;
                 position: relative;
                 border-end-start-radius: 10px;

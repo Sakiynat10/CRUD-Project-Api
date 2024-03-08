@@ -49,7 +49,7 @@ body header .headers-container .inputs select:first-child {
   max-width: 200px;
   width: 100%;
 }
-body header .headers-container .inputs .teacher-select, body header .headers-container .inputs .marry-select {
+body header .headers-container .inputs .student-select, body header .headers-container .inputs .marry-select {
   background-color: orange;
   color: #fff;
   outline: none;
@@ -58,7 +58,7 @@ body header .headers-container .inputs .teacher-select, body header .headers-con
 body header .headers-container .inputs .add-btn {
   background-color: orange;
 }
-body .teacher-cards {
+body .student-cards {
   font-family: sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,38 +71,38 @@ body .teacher-cards {
           justify-content: center;
 }
 @media (min-width: 632px) {
-  body .teacher-cards {
+  body .student-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 992px) {
-  body .teacher-cards {
+  body .student-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 1240px) {
-  body .teacher-cards {
+  body .student-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 }
-body .teacher-cards .teacher-card {
+body .student-cards .student-card {
   border: 1px solid gray;
   border-radius: 10px;
   max-width: 350px;
   width: 100%;
 }
-body .teacher-cards .teacher-card .image-card {
+body .student-cards .student-card .image-card {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   width: 100%;
   position: relative;
   height: 100px;
-  background-color: #7d2ae8;
+  background-color: orange;
 }
-body .teacher-cards .teacher-card .image-card .teacher-img {
+body .student-cards .student-card .image-card .student-img {
   z-index: 1;
   width: 150px;
   height: 150px;
@@ -110,30 +110,30 @@ body .teacher-cards .teacher-card .image-card .teacher-img {
   top: 20%;
   left: 25%;
   border-radius: 50%;
-  border: 5px solid #7d2ae8;
+  border: 5px solid orange;
   padding: 5px;
 }
-body .teacher-cards .teacher-card .image-card .social-media {
+body .student-cards .student-card .image-card .social-media {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-body .teacher-cards .teacher-card .image-card .edit-teacher-btn {
+body .student-cards .student-card .image-card .edit-student-btn {
   position: absolute;
-  background-color: #7d2ae8;
+  background-color: orange;
   border: none;
   top: 0px;
   left: 40px;
   border-top-right-radius: -50px;
 }
-body .teacher-cards .teacher-card .image-card .delete-teacher-btn {
+body .student-cards .student-card .image-card .delete-student-btn {
   position: absolute;
-  background-color: #7d2ae8;
+  background-color: orange;
   border: none;
   top: 0px;
   left: 0px;
 }
-body .teacher-cards .teacher-card .teacher-card-info {
+body .student-cards .student-card .student-card-info {
   border-end-end-radius: 10px;
   position: relative;
   border-end-start-radius: 10px;
@@ -143,17 +143,17 @@ body .teacher-cards .teacher-card .teacher-card-info {
   padding-right: 20px;
   background-color: #fff;
 }
-body .teacher-cards .teacher-card .teacher-card-info .first-name {
+body .student-cards .student-card .student-card-info .first-name {
   margin-top: 30px;
 }
-body .teacher-cards .teacher-card .teacher-card-info .first-name, body .teacher-cards .teacher-card .teacher-card-info .last-name, body .teacher-cards .teacher-card .teacher-card-info p {
+body .student-cards .student-card .student-card-info .first-name, body .student-cards .student-card .student-card-info .last-name, body .student-cards .student-card .student-card-info p {
   text-align: center;
   margin-bottom: 0px;
   font-size: 14px;
   font-weight: 600;
   color: rgb(1, 1, 18);
 }
-body .teacher-cards .teacher-card .teacher-card-info .studenst-link {
+body .student-cards .student-card .student-card-info .studenst-link {
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -165,7 +165,7 @@ body .teacher-cards .teacher-card .teacher-card-info .studenst-link {
   transition: 0.5s;
   padding: 5px 0;
 }
-body .teacher-cards .teacher-card .teacher-card-info .studenst-link:hover {
+body .student-cards .student-card .student-card-info .studenst-link:hover {
   background-color: rgb(255, 68, 0);
   color: #fff;
 }
