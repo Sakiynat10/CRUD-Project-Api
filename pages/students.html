@@ -22,6 +22,10 @@
     <script type="module" defer src="../js/students.js"></script>
   </head>
   <body>
+
+    <div class="loading"></div>
+
+
     <header>
       <div class="headers-container container">
         <a href="../index.html">        
@@ -30,15 +34,15 @@
         <div  class="d-flex gap-1 inputs">
           <select class="form-select student-select" name="" id="">
             <option  value="">Default</option>
-            <option  value="lastNmae-asc">FirstName (A-Z)</option>
-            <option value="lastNmae-desc">FirstName (Z-A)</option>
+            <option  value="lastName-asc">FirstName (A-Z)</option>
+            <option value="lastName-desc">FirstName (Z-A)</option>
           </select>
-          <select class="form-select marry-select" name="" id="">
+          <select class="form-select marry-select work-select" name="" id="">
             <option  value="">All</option>
-            <option  value="true">Married</option>
-            <option value="false">Single</option>
+            <option  value="true">Work</option>
+            <option value="false">Unemployment</option>
           </select>
-          <button data-bs-toggle="modal" data-bs-target="#student" class="btn add-btn btn-success">add</button>
+          <button type="submit" data-bs-toggle="modal" data-bs-target="#student" class="btn add-btn btn-success">add</button>
         </div>
       </div>
     </header>
@@ -69,7 +73,7 @@
                     <div class="invalid-feedback">Please fill</div>
                   </div>
                   <div class="input-group mb-3">
-                    <input type="number" class="form-control" name="degree" placeholder="Degree:">
+                    <input type="text" class="form-control" name="degree" placeholder="Degree:">
                     <div class="valid-feedback">Thanks for filling</div>
                     <div class="invalid-feedback">Please fill</div>
                   </div>
@@ -79,7 +83,7 @@
                     <div class="invalid-feedback">Please fill</div>
                   </div>
                   <div class="input-group mb-3">
-                    <input type="number" class="form-control" name="phoneNumber" placeholder="Phone Number:" required="">
+                    <input type="text" class="form-control" name="phoneNumber" placeholder="Phone Number:" required="">
                     <div class="valid-feedback">Thanks for filling</div>
                     <div class="invalid-feedback">Please fill</div>
                   </div>
@@ -131,6 +135,27 @@
             <ul class="pagination"></ul>
         </div>
         <div class="student-cards">
+          <div class="student-card">
+            <div class="image-card">
+                <img class="student-img" src=${avatar} alt="">
+                <div class="social-media">
+                    <a href="${telegram}">
+                       <img src="../images/facebook.svg">
+                    </a>
+                    <a href="${twitter}">
+                       <img src="../images/twitter.svg">
+                    </a>
+                    <a href="${github}">
+                       <img src="../images/github.svg">
+                    </a>
+                </div>
+                <div scope="col" class="card-btn">
+                   <button class="btn btn-primary delete-student-btn" studentId=${id} ><img src="../images/delete.svg"></button>
+                   <button class="btn btn-primary edit-student-btn" data-bs-toggle="modal" data-bs-target="#student" studentId=${id}><img src="../images/eidt.svg"></button>
+                </div>
+            </div>
+            
+        </div>
         </div>
       </div>
     </section>

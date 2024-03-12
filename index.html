@@ -22,14 +22,17 @@
     <script type="module" defer src="js/main.js"></script>
   </head>
   <body>
+
+    <div class="loading"></div>
+
     <header>
       <div class="headers-container container">
         <img src="./images/school-logo.png" alt="">
         <div  class="d-flex gap-1 inputs">
           <select class="form-select teacher-select" name="" id="">
             <option  value="">Default</option>
-            <option  value="lastNmae-asc">FirstName (A-Z)</option>
-            <option value="lastNmae-desc">FirstName (Z-A)</option>
+            <option  value="lastNmae-asc">LastName (A-Z)</option>
+            <option value="lastNmae-desc">LastName (Z-A)</option>
           </select>
           <select class="form-select marry-select" name="" id="">
             <option  value="">All</option>
@@ -107,7 +110,6 @@
                     </label>
                     <input class="form-check-input" type="checkbox" id="isMarried" name="isMarried">
                   </div>
-                </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -117,7 +119,7 @@
               </div>
             </div>
           </div>
-        </form>
+          </form>
         </div>
         <div class="searching">
             <input type="text" placeholder="Searching teachers..." class="form-control search-input">

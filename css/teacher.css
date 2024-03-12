@@ -234,3 +234,157 @@ body .searching .pagination .disabled .page-link {
 body .searching .pagination .active .page-link {
   background-color: orangered;
 }
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 20;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: radial-gradient(#113, #000);
+}
+
+.atom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.atom::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  -webkit-box-shadow: inset 0 0 10px #fff;
+          box-shadow: inset 0 0 10px #fff;
+  border-radius: 50%;
+}
+
+.line {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.line-1 {
+  --color: #40ff9c;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-bottom: 10px solid var(--color);
+  border-top: 10px solid var(--color);
+  -webkit-animation: line1 2s linear infinite;
+          animation: line1 2s linear infinite;
+  -webkit-filter: drop-shadow(0 0 10px var(--color));
+          filter: drop-shadow(0 0 10px var(--color));
+}
+
+@-webkit-keyframes line1 {
+  0% {
+    -webkit-transform: rotateY(70deg) rotateZ(0deg);
+            transform: rotateY(70deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(70deg) rotateZ(360deg);
+            transform: rotateY(70deg) rotateZ(360deg);
+  }
+}
+
+@keyframes line1 {
+  0% {
+    -webkit-transform: rotateY(70deg) rotateZ(0deg);
+            transform: rotateY(70deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(70deg) rotateZ(360deg);
+            transform: rotateY(70deg) rotateZ(360deg);
+  }
+}
+.line-2 {
+  --color: #0ff;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-right: 10px solid var(--color);
+  border-left: 10px solid var(--color);
+  -webkit-animation: line2 3s linear infinite;
+          animation: line2 3s linear infinite;
+  -webkit-filter: drop-shadow(0 0 10px var(--color));
+          filter: drop-shadow(0 0 10px var(--color));
+}
+
+@-webkit-keyframes line2 {
+  0% {
+    -webkit-transform: rotateX(80deg) rotateY(25deg) rotateZ(0deg);
+            transform: rotateX(80deg) rotateY(25deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(80deg) rotateY(25deg) rotateZ(360deg);
+            transform: rotateX(80deg) rotateY(25deg) rotateZ(360deg);
+  }
+}
+
+@keyframes line2 {
+  0% {
+    -webkit-transform: rotateX(80deg) rotateY(25deg) rotateZ(0deg);
+            transform: rotateX(80deg) rotateY(25deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(80deg) rotateY(25deg) rotateZ(360deg);
+            transform: rotateX(80deg) rotateY(25deg) rotateZ(360deg);
+  }
+}
+.line-3 {
+  --color: #c096ff;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-right: 10px solid var(--color);
+  border-left: 10px solid var(--color);
+  -webkit-animation: line3 3s linear infinite;
+          animation: line3 3s linear infinite;
+  -webkit-filter: drop-shadow(0 0 10px var(--color));
+          filter: drop-shadow(0 0 10px var(--color));
+}
+
+@-webkit-keyframes line3 {
+  0% {
+    -webkit-transform: rotateX(-80deg) rotateY(25deg) rotateZ(0deg);
+            transform: rotateX(-80deg) rotateY(25deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-80deg) rotateY(25deg) rotateZ(360deg);
+            transform: rotateX(-80deg) rotateY(25deg) rotateZ(360deg);
+  }
+}
+
+@keyframes line3 {
+  0% {
+    -webkit-transform: rotateX(-80deg) rotateY(25deg) rotateZ(0deg);
+            transform: rotateX(-80deg) rotateY(25deg) rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-80deg) rotateY(25deg) rotateZ(360deg);
+            transform: rotateX(-80deg) rotateY(25deg) rotateZ(360deg);
+  }
+}
